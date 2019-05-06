@@ -1,9 +1,13 @@
-/**
- * @format
- */
+/* eslint-disable arrow-body-style */
 
+import React from 'react';
 import { AppRegistry } from 'react-native';
-import App from './App';
-import { name as appName } from './app.json';
+import Header from './src/components/header';
 
-AppRegistry.registerComponent(appName, () => App);
+const App = () => {
+  return (
+    <Header headerText={'Albums'} />
+  );
+};
+
+AppRegistry.registerComponent('albums', () => App);
